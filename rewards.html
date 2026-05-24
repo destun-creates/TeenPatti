@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rewards</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Daily Rewards</h1>
+<div class="card">
+<h2>🎁 Claim Bonus</h2>
+<button onclick="claim()">Claim 50 Coins</button>
+<p id="msg"></p>
+</div>
+</div>
+
+<script>
+function claim(){
+localStorage.setItem('coins', 550);
+document.getElementById('msg').innerText = "50 coins added!";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teen Patti Table</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Teen Patti Table</h1>
+
+<div class="table">
+<div class="player">Rahul99<br>💰120</div>
+<div class="player">KingX<br>💰90</div>
+<div class="player">AmanPro<br>💰150</div>
+<div class="player you">YOU<br>💰500</div>
+</div>
+
+<div class="card">
+<h2>Pot: ₹20</h2>
+<button onclick="action('Blind')">Blind</button>
+<button onclick="action('Chaal')">Chaal</button>
+<button onclick="action('Pack')">Pack</button>
+</div>
+
+<p id="status"></p>
+</div>
+
+<script>
+function action(type){
+document.getElementById('status').innerText = "You selected: " + type;
+}
+</script>
+</body>
+</html>
